@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jakison's Hospedagem</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <p>Jakison's Hospedagem</p>
+            <ul>
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#acomodacoes">
+                        Acomodações
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicos">
+                        Serviços
+                    </a>
+                </li>
+                <li>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Alajuela</h1>
+            <p>Conheça nossos pacotes promocionais e serviços.</p>
+            <button>Saiba mais</button>
+        </div>
+    </header>
+    <section id="acomodacoes" class="acomodacoes">
+        <h1>Acomodações</h1>
+
+        <div class='acomodacoes-cards'>
+            <div class="card">
+                <img class="card-image" src="assets/acomodacoes/suite-image.jfif">
+                <div class="card-content">
+                    <h1>Suites</h1>
+                    <p>Os nossos quartos oferecem o conforto e qualidade que você tanto procura, contando com Tv's de última geração com imagem 4K, Ar condicionado Split e Frigobar.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="assets/acomodacoes/lazer-image.jfif">
+                <div class="card-content">
+                    <h1>Area de Lazer</h1>
+                    <p>Em toda a area do resort possui areas específicas para que os hospedes possam se descontrair e conversar, além de fazerem novas amizades.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-image" src="assets/acomodacoes/piscina-image.jfif">
+                <div class="card-content">
+                    <h1>Piscinas</h1>
+                    <p>O resort possui 3 piscinas com diferentes tamanhos e profundidades para atender a todos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h1>Serviços</h1>
+
+        <div class='servicos-cards'>
+            <div class="card">
+                <i data-feather="wifi"></i>
+                <div class="card-content">
+                    <h1>Rede WIFI</h1>
+                    <p>Toda a área do resort possue redes WIFI abertas para que os hospedes possam se manter conectados com familiares e amigos atrávez da internet.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i data-feather="tv"></i>
+                <div class="card-content">
+                    <h1>TV's LED</h1>
+                    <p>Todos os quartos possuem TV's LED para que os hospedes possam assitir séries e programas favoritos.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i data-feather="coffee"></i>
+                <div class="card-content">
+                    <h1>BREAKFAST</h1>
+                    <p>Café da manhã incluso em todos os pacotes, possuindo variedades de alimentos e frutas frescas durante um período de 4 horas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h1>Contato</h1>
+        <div class='contatos-cards'>
+            <h2>Av. José de Anchieta, nº 28, Macau, EX</h2>
+            <h1>TEL: 0800-0000-0000</h1>
+            <div class="redes-sociais">
+                <i data-feather="facebook"></i>
+                <i data-feather="instagram"></i>
+                <i data-feather="mail"></i>
+                <i data-feather="map"></i>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        feather.replace()
+    </script>
+</body>
+
+</html>

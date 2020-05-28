@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: calc(100vh - 300px);
+    background: no-repeat center/cover url('assets/header/header-image.jfif');
+    color: white;
+}
+
+header button {
+    padding: 10px 15px;
+    background: transparent;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: white;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+header button:hover {
+    transform: scale(1.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    /* cursor: pointer; */
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 100px 10px;
+    text-align: left;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.3rem;
+}
+
+section.acomodacoes {
+    background: #F1F1F1;
+    padding: 15px;
+}
+
+section.acomodacoes h1 {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+section.acomodacoes .acomodacoes-cards {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.acomodacoes .card {
+    width: 250px;
+    height: 450px;
+    margin: 25px 25px;
+    background: white;
+    position: relative;
+    transition: all 0.5s;
+}
+
+section.acomodacoes .card:hover {
+    transform: scale(1.1);
+}
+
+section.acomodacoes .acomodacoes-title {
+    position: static;
+}
+
+section.acomodacoes .acomodacoes-title h1 {
+    font-size: 2rem;
+}
+
+section.acomodacoes .card .card-image {
+    height: 200px;
+    width: 100%;
+}
+
+section.acomodacoes .card .card-content {
+    text-align: center;
+}
+
+section.acomodacoes .card h1 {
+    font-size: 1.3rem;
+}
+
+section.acomodacoes .card p {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+section.acomodacoes .acomodacoes-cards button {
+    padding: 10px 15px;
+    background: transparent;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: #082967;
+    color: #082967;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+section.servicos {
+    background: #FFFFFF;
+    padding: 15px;
+}
+
+section.servicos h1 {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+section.servicos .card {
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.servicos .card h1 {
+    font-size: 1.2rem;
+}
+
+section.servicos .card p {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+section.servicos .servicos-cards {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.servicos .card .card-content {
+    text-align: center;
+}
+
+section.servicos .card svg {
+    width: 40px;
+    height: 40px;
+}
+
+section.contato {
+    background: #F1F1F1;
+    padding: 15px;
+}
+
+section.contato h1 {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+    /* font-family: 'Playfair Display', sans-serif */
+}
+
+section.contatos-card {
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.contato .contatos-cards h2 {
+    color: #CEB475;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+}
+
+section.contato .contatos-cards h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+}
+
+section.contato .redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+section.contato .redes-sociais svg {
+    height: 32px;
+    width: 32px;
+    margin: 20px;
+    stroke: #CEB475;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+section.contato .redes-sociais svg:hover {
+    transform: scale(1.2);
+}
+
+
+/* RESPONSIVIDADE*/
+
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-weight: 300;
+        z-index: 99;
+        background: #006791;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+    section.contato {
+        background: #F1F1F1;
+        padding: 15px 0 55px 0;
+    }
+}
+
+
+/* Landscape phones to portrait tablet */
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {}
+
+
+/* Large desktop */
+
+@media (min-width: 1200px) {}
