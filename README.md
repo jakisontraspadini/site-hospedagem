@@ -1,6 +1,6 @@
 # Jakison's Hospedagem
 
-Este site foi desenvolvido com o intuito de estudar e práticar um pouco mais em HTML e CSS, me aprofundando um pouco mais em responsividade. Além de por como prática o flexbox, como: flex-direction, justify-content e align-items.
+Este site foi desenvolvido com o intuito de estudar e praticar um pouco mais em HTML e CSS, me aprofundando um pouco mais em responsividade. Além de por como prática o flexbox, como: flex-direction, justify-content e align-items.
 
 
 
